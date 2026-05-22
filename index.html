@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ikhlas Maulana Yusuf</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#020b2d;
+      color:white;
+    }
+
+    header{
+      width:100%;
+      padding:20px 8%;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:#03113f;
+      border-bottom:1px solid rgba(255,255,255,0.05);
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:32px;
+      font-weight:800;
+      color:white;
+    }
+
+    .logo span{
+      color:#4b8cff;
+    }
+
+    nav ul{
+      display:flex;
+      gap:30px;
+      list-style:none;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#4b8cff;
+    }
+
+    section{
+      padding:90px 8%;
+    }
+
+    .hero{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      min-height:90vh;
+    }
+
+    .hero h1{
+      font-size:72px;
+      line-height:1.1;
+      margin-bottom:20px;
+      font-weight:800;
+    }
+
+    .hero h1 span{
+      color:#4b8cff;
+    }
+
+    .hero p{
+      max-width:700px;
+      font-size:24px;
+      line-height:1.8;
+      color:#d6d6d6;
+      margin-bottom:40px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:18px 40px;
+      border-radius:50px;
+      background:linear-gradient(90deg,#5aa2ff,#2563ff);
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow:0 0 30px rgba(58,130,255,0.5);
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-5px);
+    }
+
+    .card{
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.06);
+      padding:40px;
+      border-radius:30px;
+      margin-top:40px;
+      backdrop-filter:blur(10px);
+    }
+
+    .card h2{
+      font-size:40px;
+      margin-bottom:20px;
+    }
+
+    .card p{
+      font-size:22px;
+      line-height:1.8;
+      color:#d6d6d6;
+    }
+
+    .title{
+      font-size:70px;
+      margin-bottom:50px;
+      font-weight:800;
+    }
+
+    .title span{
+      color:#4b8cff;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .learn-card{
+      background:#09183f;
+      border-radius:30px;
+      padding:35px;
+      border:1px solid rgba(255,255,255,0.06);
+      transition:0.3s;
+    }
+
+    .learn-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 0 25px rgba(58,130,255,0.2);
+    }
+
+    .learn-card h3{
+      font-size:34px;
+      margin-bottom:20px;
+      color:#4b8cff;
+    }
+
+    .learn-card p{
+      font-size:20px;
+      line-height:1.8;
+      color:#d5d5d5;
+    }
+
+    .about-box{
+      background:#09183f;
+      padding:40px;
+      border-radius:30px;
+      margin-top:40px;
+    }
+
+    .about-box p{
+      font-size:22px;
+      margin-bottom:20px;
+      color:#e0e0e0;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#bdbdbd;
+      border-top:1px solid rgba(255,255,255,0.05);
+      margin-top:50px;
+    }
+
+    @media(max-width:768px){
+
+      .logo{
+        font-size:24px;
+      }
+
+      nav ul{
+        gap:15px;
+      }
+
+      .hero h1{
+        font-size:50px;
+      }
+
+      .hero p{
+        font-size:20px;
+      }
+
+      .title{
+        font-size:50px;
+      }
+
+      .learn-card h3{
+        font-size:28px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Ikhlas <span>Maulana Yusuf</span></div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#belajar">Belajar</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Halo, Saya <br><span>Ikhlas Maulana Yusuf</span></h1>
+
+    <p>
+      Saya seorang peserta didik SMKS Sandikta kelas XI TKJ 3.
+      Saat ini saya sedang belajar membuat website pribadi,
+      networking, Linux, dan dunia teknologi untuk meningkatkan
+      skill di bidang IT.
+    </p>
+
+    <a href="#belajar" class="btn">Explore More</a>
+
+    <div class="card">
+      <h2>XI TKJ 3</h2>
+
+      <p>
+        Siswa SMKS Sandikta yang sedang belajar web development,
+        networking, dan Linux server.
+      </p>
+    </div>
+  </section>
+
+  <section id="belajar">
+    <h1 class="title">Yang Sedang <span>Saya Pelajari</span></h1>
+
+    <div class="grid">
+
+      <div class="learn-card">
+        <h3>🌐 Web Development</h3>
+        <p>
+          Belajar membuat website modern menggunakan HTML, CSS,
+          dan JavaScript dengan desain responsive.
+        </p>
+      </div>
+
+      <div class="learn-card">
+        <h3>🖥️ Networking</h3>
+        <p>
+          Memahami dasar jaringan komputer, konfigurasi router,
+          topologi jaringan, dan troubleshooting.
+        </p>
+      </div>
+
+      <div class="learn-card">
+        <h3>🐧 Linux Server</h3>
+        <p>
+          Belajar administrasi Linux server, hosting website,
+          dan keamanan sistem.
+        </p>
+      </div>
+
+      <div class="learn-card">
+        <h3>🌍 Server & Networking</h3>
+        <p>
+          Belajar DNS, web server, mail server, install WordPress,
+          serta memahami topologi jaringan menggunakan Cisco Packet Tracer.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="tentang">
+    <h1 class="title">Tentang <span>Saya</span></h1>
+
+    <p style="font-size:22px; line-height:1.9; color:#d9d9d9; max-width:850px;">
+      Saya memiliki minat besar di bidang teknologi, terutama networking
+      dan web development. Saya terus belajar untuk meningkatkan kemampuan
+      dan menjadi seseorang yang profesional di dunia IT.
+    </p>
+
+    <a href="#" class="btn" style="margin-top:40px;">Hubungi Saya</a>
+
+    <div class="about-box">
+      <p><b>Nama :</b> Ikhlas Maulana Yusuf</p>
+      <p><b>Sekolah :</b> SMKS Sandikta</p>
+      <p><b>Kelas :</b> XI TKJ 3</p>
+      <p><b>Fokus :</b> Networking & Web Development</p>
+      <p><b>Status :</b> Sedang Belajar</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Ikhlas Maulana Yusuf - Portfolio Website
+  </footer>
+
+</body>
+</html>
